@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="default_head_blocks"/>
+    <body>
+        <referenceContainer name="header-wrapper">
+            <referenceBlock name="navigation.sections" remove="true" />
+        </referenceContainer>
+
+        <referenceContainer name="page.wrapper">
+            
+             <block class="Magento\Framework\View\Element\Template" name="page_notification" before="-"  template="Magento_Theme::custom_notification.phtml" />
+
+            <container name="home.header" htmlTag="header" htmlClass="home-header header-main container-fluid main_header home_header d-flex align-items-center justify-content-between mt-3 mb-3" before="page.top">
+                <block class="Magento\Framework\View\Element\Template" name="page_header"  template="Magento_Theme::custom_header.phtml" />
+            </container>
+
+        </referenceContainer>
+
+        <referenceContainer name="footer-container">
+            <block class="Magento\Theme\Block\Html\Footer" name="footer" template="Magento_Theme::footer.phtml"/>
+           <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="Magento_Theme::html/copyright.phtml"/>
+        </referenceContainer>
+
+        <referenceBlock name="register-link" remove="true" />           
+        <referenceBlock name="wish-list-link" remove="false" />         
+        <referenceBlock name="my-account-link" remove="true" />         
+        <referenceBlock name="skip_to_content.target" remove="true" />
+        <referenceBlock name="header" remove="true" />
+        <referenceBlock name="authorization-link" remove="true" />
+        <referenceBlock name="advanced-search-link" remove="true"/>        
+        <referenceBlock name="header.container" remove="true"/>        
+        <referenceBlock name="custom.header" remove="true"/>
+        <referenceBlock name="page.top" remove="false"/>
+        <referenceBlock name="page.main.title" remove="false"/>
+        <referenceBlock name="form.subscribe" remove="true"/>
+        <referenceBlock name="sidebar.additional" remove="true"/>
+        <referenceBlock name="minicart" remove="true"/>
+        
+    </body>
+</page>

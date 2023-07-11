@@ -1,0 +1,87 @@
+<div class="accord">
+  <div id="accordion">
+	  <div class="accordionMainTitle">
+	    <span>Frequently Asked Questions </span>
+	  </div>
+	  <div id="panel-wrapper"> 
+	    <div class="panel active">
+	     <div class="acc-header">
+	     <span>How do i setup my lock?</span>
+	    </div>
+	    <div class="acc-body">
+	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	    </div>
+	  	</div>
+		<div class="panel">
+		     <div class="acc-header">
+		     <span>Lorem Ipsum is simply dummy text?</span>
+		    </div>
+		    <div class="acc-body">
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		    </div>
+		</div>
+		<div class="panel">
+		     <div class="acc-header">
+		    <span class="acc-header-title">Lorem Ipsum is simply dummy text?</span>
+		    </div>
+		    <div class="acc-body">
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		    </div>
+		</div>
+		<div class="panel">
+		     <div class="acc-header">
+		    <span class="acc-header-title">Lorem Ipsum is simply dummy text?</span>
+		    </div>
+		    <div class="acc-body">
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		    </div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+function initAccordion(accordionElem){
+  
+  function handlePanelClick(event){
+      showPanel(event.currentTarget);
+  }
+  
+  function showPanel(panel){
+     var expandedPanel = accordionElem.querySelector(".active");
+     if (expandedPanel){
+         expandedPanel.classList.remove("active");
+     }
+     panel.classList.add("active");
+     
+  }
+  var allPanelElems = accordionElem.querySelectorAll(".panel");
+  for (var i = 0, len = allPanelElems.length; i < len; i++){
+       allPanelElems[i].addEventListener("click", handlePanelClick);
+  }
+  showPanel(allPanelElems[-1])
+}
+initAccordion(document.getElementById("accordion"));
+
+var accordionHeader = document.g
+</script>
